@@ -45,6 +45,11 @@
     color: black; */
     text-decoration-line: underline;
 }
+a{
+    text-decoration: none;
+    color: white;
+    background-color: brown;
+}
 .info{
     display: flex;
     flex-direction: column;
@@ -66,7 +71,6 @@ span{
     right: 30px;
     height: 500px;
     border-radius: 10px;
-
 }
 button{
     font-size: 25px;
@@ -85,9 +89,9 @@ button:hover{
     background-color: white;
 }
 .social{
-        margin-left: 350px;
-        transition: all 0.25s ease;
-        color: black;
+     margin-left: 350px;
+     transition: all 0.25s ease;
+     color: black;
 }
 i:hover{
     transform: scale(1.25,1.25);
@@ -96,6 +100,35 @@ i{
     margin-right: 40px;
     font-size: 50px;
     color: black;
+}
+.About_Page{
+    width: 100vw;
+    height: 100vh;
+}
+.About_Info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 25%;
+}
+#about-img{
+    position: relative;
+    top: 25%;
+    height: 400px;
+    border-radius: 50%;
+}
+#about-content{
+    width: 100vh;
+    /* height: 50vw; */
+    border: 2px solid black;
+    font-size: 2rem;
+    text-align: justify;
+    padding: 5px;
+}
+#heading{
+    text-align: center;
 }
 /* .page2
 {
@@ -149,6 +182,61 @@ p{
       margin-right: 20px;
     }
   } */
-   @media screen {
-    
+   @media (max-width : 600px) {
+    .list, .logo{
+        display: none;
+    }
+    #image {
+        position: relative;
+        top: 2px;
+        height: 300px; /* Scales down height */
+        width: 300px;
+        border-radius: 5px;
+        margin: auto;
+    }
+    .info{
+        position:relative;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    #info1{
+        /* margin-top: 70px; */
+        font-size: 20px;
+        margin-left: 10px;
+        /* padding: 50px; */
+    }
+    span{
+        color: brown;
+    }
+    .social{
+        /* margin-left: 350px; */
+        transition: all 0.25s ease;
+        color: black;
+}
+i:hover{
+    transform: scale(1.25,1.25);
+}
+i{
+    margin-right: 40px;
+    font-size: 25px;
+    color: black;
+}
+button{
+    font-size: 15px;
+    font-family: sans-serif;
+    width: 75px;
+    color:aliceblue;
+    padding: 5px;
+    border: none;
+    background-color: brown;
+    border-radius: 5px;
+    cursor:   pointer ;
+    transition: all 1.5s ease ;
+}
+button:hover{
+    color: brown;
+    background-color: white;
+}
+
    }
